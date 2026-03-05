@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm to Fork & Back | Sustainable Ecosystem</title>
+    <meta name="description"
+        content="A sustainable, closed-loop ecosystem connecting local farmers with premium restaurants. Fresh vegetables and dairy delivered, organic waste returned for composting.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <span class="logo-leaf">🌿</span> Eco<span class="logo-bold">Cycle</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#the-cycle">The Cycle</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#join" class="btn-primary-sm">Join Ecosystem</a></li>
+            <li><a href="#" class="btn-secondary-light" id="navLoginBtn"
+                    style="color: var(--color-primary-dark); border-color: var(--color-primary); margin-left:1rem;">Login</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero fade-in-section" style="background-image: url('/organic2.jpg');">
+            <div class="hero-content glass-card"
+                style="padding: 3rem; background: rgba(255,255,255,0.7); backdrop-filter: blur(15px); border-radius: var(--radius-xl); box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                <div class="hero-badge"
+                    style="background: rgba(129, 199, 132, 0.2); color: var(--color-primary-dark); border: 1px solid rgba(129, 199, 132, 0.4);">
+                    🌱 A Sustainable Closed-Loop</div>
+                <h1 class="hero-title" style="color: var(--color-text-main); text-shadow: none;">Welcome to
+                    <br><span class="text-gradient">Farmer Restaurant</span>
+                </h1>
+                <p class="hero-subtitle" style="color: var(--color-text-muted); text-shadow: none;">We bridge the gap
+                    between farm and table, and back again. Premium restaurants
+                    receive peak-fresh vegetables and dairy, while our farms receive nutrient-rich organic waste for
+                    composting.</p>
+                <div class="hero-ctas">
+                    <a href="#the-cycle" class="btn-primary">Explore The Cycle</a>
+                    <a href="#join" class="btn-secondary"
+                        style="background: transparent; border-color: var(--color-primary); color: var(--color-primary);">Partner
+                        With Us</a>
+                </div>
+            </div>
+            <!-- Removed hero-visual inner <img> container per user request -->
+        </section>
+
+        <!-- The Cycle Section -->
+        <section id="the-cycle" class="cycle-section">
+            <div class="section-header fade-in-section">
+                <h2>How The <span class="text-gradient">Cycle</span> Works</h2>
+                <p>A mutually beneficial relationship that regenerates the earth while elevating culinary experiences.
+                </p>
+            </div>
+
+            <div class="cycle-container">
+                <!-- Step 1 -->
+                <div class="cycle-step fade-in-section">
+                    <div class="step-icon glass-icon">1</div>
+                    <div class="cycle-card glass-card">
+                        <div class="card-image-wrapper">
+                            <img src="/step1.jpg" alt="Harvest step" class="responsive-img cycle-img" id="imgStep1">
+                        </div>
+                        <div class="card-content">
+                            <h3>Harvest & Delivery</h3>
+                            <p>Our network of local farmers harvest organic vegetables and craft artisanal dairy
+                                products at their peak.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Connector -->
+                <div class="cycle-connector">
+                    <div class="line"></div>
+                    <div class="arrow">↓</div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="cycle-step fade-in-section">
+                    <div class="step-icon glass-icon">2</div>
+                    <div class="cycle-card glass-card">
+                        <div class="card-image-wrapper">
+                            <img src="/step2.jpg" alt="Culinary step" class="responsive-img cycle-img" id="imgStep2">
+                        </div>
+                        <div class="card-content">
+                            <h3>Culinary Excellence</h3>
+                            <p>Partner restaurants transform these hyper-local ingredients into extraordinary dishes,
+                                minimizing their carbon footprint.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Connector -->
+                <div class="cycle-connector">
+                    <div class="line"></div>
+                    <div class="arrow">↓</div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="cycle-step fade-in-section">
+                    <div class="step-icon glass-icon">3</div>
+                    <div class="cycle-card glass-card">
+                        <div class="card-image-wrapper">
+                            <img src="./organic1.jpg" alt="Composting organic waste" class="responsive-img cycle-img"
+                                id="imgStep3">
+                        </div>
+                        <div class="card-content">
+                            <h3>Organic Return</h3>
+                            <p>Restaurants collect all vegetable trimmings and organic food waste, which we pick up
+                                during our next delivery run.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Connector -->
+                <div class="cycle-connector cycle-connector-up">
+                    <div class="line"></div>
+                    <div class="arrow">↑</div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="cycle-step fade-in-section">
+                    <div class="step-icon glass-icon">4</div>
+                    <div class="cycle-card glass-card">
+                        <div class="card-image-wrapper">
+                            <img src="./organic2.jpg" alt="Rich compost soil" class="responsive-img cycle-img"
+                                id="imgStep4">
+                        </div>
+                        <div class="card-content">
+                            <h3>Soil Regeneration</h3>
+                            <p>The organic waste is returned to the farms and composted, enriching the soil for the next
+                                generation of crops. The cycle begins anew.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Connecting overlay line -->
+            <div class="cycle-loop-line"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section fade-in-section"
+            style="background-image: url('/about-bg.jpg'); border-radius: var(--radius-xl); overflow: hidden; margin: 2rem 5%;">
+            <!-- Added a dark overlay internally so text spans remain readable -->
+            <div
+                style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to right, rgba(28,33,30,0.95) 0%, rgba(28,33,30,0.7) 50%, rgba(0,0,0,0) 100%); z-index: 1;">
+            </div>
+
+            <div class="about-grid"
+                style="z-index: 2; position: relative; display: block; max-width: 600px; margin-left: 0;">
+                <div class="about-content glass-card" style="background: transparent; border: none; box-shadow: none;">
+                    <h2 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">About <span
+                            class="text-gradient">our journey...</span></h2>
+                    <p style="color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">EcoCycle was founded with a
+                        singular mission: to eliminate food waste while elevating the culinary
+
+                        ecosystem. We realized that local farms were struggling with the high costs of organic
+                        fertilizers,
+                        while premium restaurants were throwing away nutrient-dense food scraps.</p>
+                    <p>By connecting the two, we've created a closed-loop system that solves problems for both partners.
+                        Farms supply restaurants with hyper-local, peak-fresh ingredients. Restaurants return their
+                        organic
+                        trimmings, which we compost and return to the earth to grow the next harvest.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10k+</h3>
+                            <p>Lbs Composted</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Local Farms</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Chefs Joined</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="join" class="cta-section fade-in-section">
+            <div class="glass-card cta-card">
+                <h2>Ready to Join the Ecosystem?</h2>
+                <p>Whether you're a local farm looking for consistent restaurant partners, or a chef wanting the
+                    freshest ingredients with zero waste guilt.</p>
+                <form id="joinForm" class="join-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name or Business Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="role" name="role" required>
+                            <option value="">Select your role...</option>
+                            <option value="farmer">🌾 I'm a Farmer</option>
+                            <option value="restaurant">🍽️ I'm a Restaurant</option>
+                        </select>
+                    </div>
+
+                    <!-- Farmer Specifications (Hidden by default) -->
+                    <div id="farmerSpecs" class="role-specs hidden">
+                        <div class="form-group">
+                            <input type="text" id="farmSize" name="farmSize" placeholder="Farm Size (e.g., 50 Acres)">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="produceType" name="produceType"
+                                placeholder="Key Produce/Dairy (e.g., Tomatoes, Milk)">
+                        </div>
+                    </div>
+
+                    <!-- Restaurant Specifications (Hidden by default) -->
+                    <div id="restaurantSpecs" class="role-specs hidden">
+                        <div class="form-group">
+                            <input type="text" id="cuisineType" name="cuisineType"
+                                placeholder="Cuisine Type (e.g., Fine Dining, Italian)">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="weeklyWaste" name="weeklyWaste"
+                                placeholder="Estimated Weekly Organic Waste (kg or lbs)">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary" id="submitBtn">Join Ecosystem</button>
+                    <p id="formMessage" class="form-message"></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Login Modal -->
+        <div id="loginModal" class="modal-overlay hidden">
+            <div class="modal-content glass-card">
+                <span class="close-modal" id="closeLogin">&times;</span>
+                <h2>Login to <span class="text-gradient">EcoCycle</span></h2>
+                <div class="role-tabs">
+                    <button class="tab-btn active" data-role="farmer">Farmer Login</button>
+                    <button class="tab-btn" data-role="restaurant">Restaurant Login</button>
+                </div>
+                <form id="loginForm" class="join-form">
+                    <input type="hidden" id="loginRole" value="farmer">
+                    <div class="form-group">
+                        <input type="email" id="loginEmail" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="loginPassword" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                    <p id="loginMessage" class="form-message"></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Dashboard Views (Hidden by Default) -->
+        <section id="dashboardView" class="hidden">
+            <div style="display: flex; justify-content: flex-end; padding: 2rem 5% 0;">
+                <button class="btn-secondary-light" id="logoutBtn"
+                    style="color: var(--color-primary-dark); border-color: var(--color-primary-dark);">Logout</button>
+            </div>
+
+            <!-- Farmer Dashboard -->
+            <div id="farmerDashboard" class="dashboard-content hidden">
+                <h2 style="text-align: center; font-size: 2.5rem; margin-top: 2rem;">Welcome Back, <span
+                        class="text-gradient">Farmer</span>!</h2>
+                <div class="cycle-container"
+                    style="margin-top: 3rem; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 1200px;">
+                    <div class="cycle-card glass-card"
+                        style="padding: 2rem; width: 100%; max-width: 350px; text-align: center; margin: 0;">
+                        <span style="font-size: 3rem;">📦</span>
+                        <h3>Pending Deliveries</h3>
+                        <p>You have 3 upcoming deliveries to local restaurants.</p>
+                        <button class="btn-primary-sm" style="margin-top: 1rem;">View Deliveries</button>
+                    </div>
+                    <div class="cycle-card glass-card"
+                        style="padding: 2rem; width: 100%; max-width: 350px; text-align: center; margin: 0;">
+                        <span style="font-size: 3rem;">🌱</span>
+                        <h3>Incoming Compost</h3>
+                        <p>50 lbs of organic waste arriving tomorrow.</p>
+                        <button class="btn-secondary-light"
+                            style="margin-top: 1rem; color: var(--color-primary-dark); border-color: var(--color-primary-dark);">View
+                            Details</button>
+                    </div>
+                    <div class="cycle-card glass-card"
+                        style="padding: 2rem; width: 100%; max-width: 350px; text-align: center; margin: 0;">
+                        <span style="font-size: 3rem;">🚜</span>
+                        <h3>About Cultivation</h3>
+                        <p>Update your farm size, primary crops, and sustainable practices.</p>
+                        <button class="btn-secondary-light"
+                            style="margin-top: 1rem; color: var(--color-primary-dark); border-color: var(--color-primary-dark);">Update
+                            Info</button>
+                    </div>
+                    <div class="cycle-card glass-card"
+                        style="padding: 2rem; width: 100%; max-width: 350px; text-align: center; margin: 0;">
+                        <span style="font-size: 3rem;">🍽️</span>
+                        <h3>Restaurant Waste Specs</h3>
+                        <p>Browse local restaurants and their organic waste output specifications.</p>
+                        <button class="btn-secondary-light"
+                            style="margin-top: 1rem; color: var(--color-primary-dark); border-color: var(--color-primary-dark);">View
+                            Restaurants</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant Dashboard -->
+            <div id="restaurantDashboard" class="dashboard-content hidden">
+                <h2 style="text-align: center; font-size: 2.5rem; margin-top: 2rem;">Welcome Back, <span
+                        class="text-gradient">Chef</span>!</h2>
+                <div class="cycle-container"
+                    style="margin-top: 3rem; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 1200px;">
+                    <div class="cycle-card glass-card"
+                        style="padding: 2rem; width: 100%; max-width: 350px; text-align: center; margin: 0;">
+                        <span style="font-size: 3rem;">📸</span>
+                        <h3>Log Organic Waste</h3>
+                        <p>Upload a photo of your recent organic waste for our pickup team.</p>
+                        <form id="uploadWasteForm" enctype="multipart/form-data"
+                            style="margin-top: 1rem; display: flex; flex-direction: column; gap: 1rem;">
+                            <input type="file" id="wasteImage" name="wasteImage" accept="image/*" required
+                                style="font-size: 0.9rem; padding: 0.5rem; border: 1px solid rgba(46,125,50,0.3); border-radius: var(--radius-sm);">
+                            <button type="submit" class="btn-primary-sm">Upload Image</button>
+                        </form>
+                        <p id="uploadMessage" class="form-message" style="font-size: 0.9rem;"></p>
+                    </div>
+                    <div class="cycle-card glass-card"
+                        style="padding: 2rem; width: 100%; max-width: 350px; text-align: center; margin: 0;">
+                        <span style="font-size: 3rem;">🥬</span>
+                        <h3>Recent Deliveries</h3>
+                        <p>2 boxes of organic vegetables received this morning.</p>
+                        <button class="btn-secondary-light"
+                            style="margin-top: 1rem; color: var(--color-primary-dark); border-color: var(--color-primary-dark);">View
+                            Invoice</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-leaf">🌿</span> Eco<span class="logo-bold">Cycle</span>
+                </div>
+                <p>Cultivating sustainability, one delivery at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <a href="#home">Home</a>
+                <a href="#the-cycle">The Cycle</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>hello@ecocycle.demo</p>
+                <p>+1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EcoCycle Sustainability Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

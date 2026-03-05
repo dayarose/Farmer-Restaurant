@@ -1,0 +1,35 @@
+# Goal Description
+Update the "Join Ecosystem" form to capture detailed specifications based on the user's chosen role (Farmer or Restaurant).
+
+## Proposed Changes
+
+### Frontend Modifications
+#### [MODIFY] [index.html](file:///c:/Users/DAYA%20ROSE/OneDrive/farmer-restaurant/index.html)
+- Add a hidden "Farmer Specifications" section to the form:
+  - Farm Size (e.g., Acres)
+  - Key Produce/Dairy Types
+- Add a hidden "Restaurant Specifications" section:
+  - Cuisine Type
+  - Estimated Weekly Organic Waste (kg/lbs)
+
+#### [MODIFY] [styles.css](file:///c:/Users/DAYA%20ROSE/OneDrive/farmer-restaurant/styles.css)
+- Add a `.hidden { display: none; }` utility class.
+- Add specific styling for the new input fields (aligned with the existing glassmorphism aesthetic).
+
+#### [MODIFY] [script.js](file:///c:/Users/DAYA%20ROSE/OneDrive/farmer-restaurant/script.js)
+- Add an `onchange` event listener to the "Role" dropdown.
+- When "Farmer" is selected, show the Farmer Specifications and hide the Restaurant ones (and vice versa).
+- Ensure the JavaScript `FormData` capture still neatly packages these new fields into the JSON payload sent to the backend.
+
+### Backend Validation (Optional Polish)
+#### [MODIFY] [server.js](file:///c:/Users/DAYA%20ROSE/OneDrive/farmer-restaurant/server.js)
+- *Note:* The backend already captures all `req.body` data, so no strict database schema changes are needed since it's saving straight to JSON, but we can log the new custom fields for clarity.
+
+## Verification Plan
+### Manual Verification
+1. I will load the page locally.
+2. I will select "Farmer" on the form and verify that the Farmer-specific fields gracefully appear.
+3. I will submit the form and verify that the new details correctly reach the [server.js](file:///c:/Users/DAYA%20ROSE/OneDrive/farmer-restaurant/server.js) backend and are saved in `submissions.json`.
+
+> [!NOTE]  
+> Before I proceed, does this list of specific fields (Farm Size, Produce Type, Cuisine Type, Weekly Waste Estimate) match what you had in mind, or are there specific fields you want me to add?
